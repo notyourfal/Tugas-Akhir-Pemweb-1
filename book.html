@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Tiket</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Booked a Trip Section -->
+    <section class="booked-trip">
+      <div class="container">
+        <h2>BOOK YOUR TRIP</h2>
+        <p>
+          Rencanakan perjalanan impian Anda bersama FTravel. Isi formulir
+          berikut untuk memesan!
+        </p>
+        <form action="#" method="post" class="trip-form">
+          <a href="index.html">Home</a>
+          <br />
+          <!-- Input for Name -->
+          <label for="name">Nama Lengkap:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+
+          <!-- Input for Email -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan email Anda"
+            required
+          />
+
+          <!-- Input for Destination -->
+          <label for="destination">Tujuan Wisata:</label>
+          <select id="destination" name="destination" required>
+            <option value="" disabled selected>Pilih destinasi</option>
+            <option value="bali">Bali</option>
+            <option value="raja-ampat">Raja Ampat</option>
+            <option value="labuan-bajo">Labuan Bajo</option>
+            <option value="yogyakarta">Yogyakarta</option>
+            <option value="danau-toba">Danau Toba</option>
+          </select>
+
+          <!-- Input for Date -->
+          <label for="date">Tanggal Keberangkatan:</label>
+          <input type="date" id="date" name="date" required />
+
+          <!-- Input for Number of People -->
+          <label for="people">Jumlah Orang:</label>
+          <input
+            type="number"
+            id="people"
+            name="people"
+            min="1"
+            max="20"
+            placeholder="Jumlah orang"
+            required
+          />
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="btn-book"
+            onclick="alert('Pesanan Berhasil')"
+          >
+            Pesan Sekarang
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
